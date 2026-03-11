@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSeat | Booking Confirmation</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container navbar">
+          <a class="brand" href="../index.html" aria-label="CineSeat home">
+            <span class="brand-mark">CS</span>
+            <span>CineSeat</span>
+          </a>
+          <nav class="nav-menu" aria-label="Primary navigation">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="city.html">Cities</a>
+            <a class="nav-link" href="movies.html">Movies</a>
+            <a class="nav-link is-active" href="booking-summary.html">Bookings</a>
+          </nav>
+          <div class="nav-actions">
+            <a class="button-secondary" href="payment.html">Login</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="section">
+          <div class="container grid-2">
+            <section class="page-banner stack-md" aria-labelledby="confirmation-title">
+              <span class="confirmation-badge">Payment successful</span>
+              <h1 id="confirmation-title">Booking confirmed</h1>
+              <p>
+                Your seats are reserved. This confirmation layout is ready to receive QR codes,
+                booking references, and API-generated metadata in a future enhancement phase.
+              </p>
+              <div class="cluster">
+                <a class="button" href="../index.html">Back to home</a>
+                <a class="button-secondary" href="movies.html">Book another show</a>
+              </div>
+            </section>
+
+            <aside class="ticket-card stack-md" aria-labelledby="ticket-title">
+              <span class="badge">Step 7 of 7</span>
+              <h2 id="ticket-title">Movie ticket</h2>
+              <div class="ticket-divider"></div>
+              <div class="detail-list">
+                <div class="detail-item">
+                  <strong>Booking ID</strong>
+                  <span>CS-20260311-7842</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Movie</strong>
+                  <span>Avatar Horizons</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Theatre</strong>
+                  <span>PVR Luxe, Phoenix Marketcity</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Show time</strong>
+                  <span>Thursday &middot; 7:40 PM</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Seats</strong>
+                  <span>A3, A4</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Total paid</strong>
+                  <span>&#8377;788</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p>&copy; 2026 CineSeat. Enterprise-ready movie booking UI.</p>
+          <p>Confirmation ticket component is ready for PDF or QR extensions.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

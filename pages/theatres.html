@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSeat | Select Theatre</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container navbar">
+          <a class="brand" href="../index.html" aria-label="CineSeat home">
+            <span class="brand-mark">CS</span>
+            <span>CineSeat</span>
+          </a>
+          <nav class="nav-menu" aria-label="Primary navigation">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="city.html">Cities</a>
+            <a class="nav-link is-active" href="movies.html">Movies</a>
+            <a class="nav-link" href="booking-summary.html">Bookings</a>
+          </nav>
+          <div class="nav-actions">
+            <a class="button-secondary" href="payment.html">Login</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="section">
+          <div class="container stack-lg">
+            <div class="page-banner stack-md">
+              <span class="badge">Step 3 of 7</span>
+              <h1>Select theatre and show time</h1>
+              <p>
+                Theatre cards keep location, facility labels, and show time buttons in one
+                consistent module that scales to dynamic inventory later.
+              </p>
+            </div>
+
+            <div class="grid-sidebar">
+              <section class="stack-lg" aria-labelledby="theatre-list-title">
+                <div class="section-header">
+                  <div>
+                    <span class="badge">Available theatres</span>
+                    <h2 id="theatre-list-title">Avatar Horizons</h2>
+                  </div>
+                  <span class="pill">Thursday, 7:00 PM prime window</span>
+                </div>
+
+                <article class="card theatre-card">
+                  <div class="theatre-card-header">
+                    <div>
+                      <h3>PVR Luxe, Phoenix Marketcity</h3>
+                      <p class="text-muted">Velachery, Chennai &middot; 6.2 km away</p>
+                    </div>
+                    <span class="badge">4K Dolby Atmos</span>
+                  </div>
+                  <p class="text-muted">Premium recliners, food ordering lane, wheelchair access.</p>
+                  <div class="showtime-group" aria-label="PVR Luxe show times">
+                    <a class="showtime-btn" href="seats.html">10:15 AM</a>
+                    <a class="showtime-btn" href="seats.html">1:45 PM</a>
+                    <a class="showtime-btn" href="seats.html">5:20 PM</a>
+                    <a class="showtime-btn" href="seats.html">8:55 PM</a>
+                  </div>
+                </article>
+
+                <article class="card theatre-card">
+                  <div class="theatre-card-header">
+                    <div>
+                      <h3>INOX Megaplex, Marina Mall</h3>
+                      <p class="text-muted">OMR, Chennai &middot; 12.4 km away</p>
+                    </div>
+                    <span class="badge">IMAX Laser</span>
+                  </div>
+                  <p class="text-muted">Large format screen, lounge waiting area, family combo offers.</p>
+                  <div class="showtime-group" aria-label="INOX Megaplex show times">
+                    <a class="showtime-btn" href="seats.html">9:30 AM</a>
+                    <a class="showtime-btn" href="seats.html">12:55 PM</a>
+                    <a class="showtime-btn" href="seats.html">4:10 PM</a>
+                    <a class="showtime-btn" href="seats.html">7:40 PM</a>
+                  </div>
+                </article>
+
+                <article class="card theatre-card">
+                  <div class="theatre-card-header">
+                    <div>
+                      <h3>AGS Cinemas, Villivakkam</h3>
+                      <p class="text-muted">Skywalk Mall, Chennai &middot; 9.8 km away</p>
+                    </div>
+                    <span class="badge">Recliner Lounge</span>
+                  </div>
+                  <p class="text-muted">Balanced pricing with premium and standard halls across the day.</p>
+                  <div class="showtime-group" aria-label="AGS Cinemas show times">
+                    <a class="showtime-btn" href="seats.html">11:00 AM</a>
+                    <a class="showtime-btn" href="seats.html">2:20 PM</a>
+                    <a class="showtime-btn" href="seats.html">5:50 PM</a>
+                    <a class="showtime-btn" href="seats.html">9:15 PM</a>
+                  </div>
+                </article>
+              </section>
+
+              <aside class="summary-card stack-md" aria-labelledby="selection-summary-title">
+                <span class="badge">Selection summary</span>
+                <h2 id="selection-summary-title">Current booking</h2>
+                <div class="detail-list">
+                  <div class="detail-item">
+                    <strong>City</strong>
+                    <span>Chennai</span>
+                  </div>
+                  <div class="detail-item">
+                    <strong>Movie</strong>
+                    <span>Avatar Horizons</span>
+                  </div>
+                  <div class="detail-item">
+                    <strong>Languages</strong>
+                    <span>English, Tamil</span>
+                  </div>
+                  <div class="detail-item">
+                    <strong>Formats</strong>
+                    <span>IMAX 3D, 2D</span>
+                  </div>
+                </div>
+                <a class="button-secondary" href="seats.html">Skip to seat map</a>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p>&copy; 2026 CineSeat. Enterprise-ready movie booking UI.</p>
+          <p>Theatre cards support dynamic time slot injection later.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

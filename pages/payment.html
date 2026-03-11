@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSeat | Payment</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container navbar">
+          <a class="brand" href="../index.html" aria-label="CineSeat home">
+            <span class="brand-mark">CS</span>
+            <span>CineSeat</span>
+          </a>
+          <nav class="nav-menu" aria-label="Primary navigation">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="city.html">Cities</a>
+            <a class="nav-link" href="movies.html">Movies</a>
+            <a class="nav-link is-active" href="booking-summary.html">Bookings</a>
+          </nav>
+          <div class="nav-actions">
+            <a class="button-secondary" href="payment.html">Login</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="section">
+          <div class="container grid-2">
+            <section class="payment-card stack-md" aria-labelledby="payment-title">
+              <span class="badge">Step 6 of 7</span>
+              <h1 id="payment-title">Choose payment method</h1>
+              <p class="text-muted">
+                Accessible form controls and clear labels prepare this page for later gateway
+                integration without changing the visual contract.
+              </p>
+              <form class="payment-options">
+                <label class="payment-option" for="upi">
+                  <input id="upi" type="radio" name="payment-method" checked>
+                  <span>
+                    <strong>UPI</strong><br>
+                    <span class="text-muted">Instant payment with supported UPI apps.</span>
+                  </span>
+                </label>
+
+                <label class="payment-option" for="credit-card">
+                  <input id="credit-card" type="radio" name="payment-method">
+                  <span>
+                    <strong>Credit Card</strong><br>
+                    <span class="text-muted">Visa, Mastercard, Amex with 3D secure flow.</span>
+                  </span>
+                </label>
+
+                <label class="payment-option" for="debit-card">
+                  <input id="debit-card" type="radio" name="payment-method">
+                  <span>
+                    <strong>Debit Card</strong><br>
+                    <span class="text-muted">Major bank cards with OTP verification.</span>
+                  </span>
+                </label>
+
+                <label class="payment-option" for="net-banking">
+                  <input id="net-banking" type="radio" name="payment-method">
+                  <span>
+                    <strong>Net Banking</strong><br>
+                    <span class="text-muted">Redirect-based checkout for listed banking partners.</span>
+                  </span>
+                </label>
+
+                <a class="button" href="confirmation.html">Confirm payment</a>
+              </form>
+            </section>
+
+            <aside class="summary-card stack-md" aria-labelledby="payment-summary-title">
+              <span class="badge">Payment summary</span>
+              <h2 id="payment-summary-title">You are paying</h2>
+              <div class="detail-list">
+                <div class="detail-item">
+                  <strong>Movie</strong>
+                  <span>Avatar Horizons</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Seats</strong>
+                  <span>A3, A4</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Venue</strong>
+                  <span>PVR Luxe</span>
+                </div>
+              </div>
+              <div class="checkout-total">
+                <div>
+                  <p class="text-muted">Payable now</p>
+                  <strong>&#8377;788</strong>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p>&copy; 2026 CineSeat. Enterprise-ready movie booking UI.</p>
+          <p>Payment form is structured for future validation and gateway hooks.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

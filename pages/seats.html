@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSeat | Select Seats</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container navbar">
+          <a class="brand" href="../index.html" aria-label="CineSeat home">
+            <span class="brand-mark">CS</span>
+            <span>CineSeat</span>
+          </a>
+          <nav class="nav-menu" aria-label="Primary navigation">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="city.html">Cities</a>
+            <a class="nav-link" href="movies.html">Movies</a>
+            <a class="nav-link" href="booking-summary.html">Bookings</a>
+          </nav>
+          <div class="nav-actions">
+            <a class="button-secondary" href="payment.html">Login</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="section">
+          <div class="container grid-sidebar">
+            <section class="stack-lg" aria-labelledby="seat-map-title">
+              <div class="page-banner stack-md">
+                <span class="badge">Step 4 of 7</span>
+                <h1 id="seat-map-title">Select your seats</h1>
+                <p>
+                  Cinema-style seat layout distinguishes available, premium, VIP, booked, and
+                  locked states while keeping the legend visible and readable on all breakpoints.
+                </p>
+              </div>
+
+              <div class="screen">
+                <span class="pill">Screen 1 &middot; IMAX 3D</span>
+                <div class="screen-arc" aria-hidden="true"></div>
+                <strong>SCREEN</strong>
+              </div>
+
+              <div class="seat-map">
+                <section class="seat-section-card" aria-labelledby="vip-title">
+                  <div class="seat-section-header">
+                    <h2 id="vip-title">VIP</h2>
+                    <span class="pill">&#8377;350 / seat</span>
+                  </div>
+                  <div class="seat-grid" role="grid" aria-label="VIP seat grid">
+                    <div class="seat-row" role="row">
+                      <span class="row-label">A</span>
+                      <button class="seat vip" type="button" aria-label="Seat A1 VIP available">A1</button>
+                      <button class="seat vip" type="button" aria-label="Seat A2 VIP available">A2</button>
+                      <button class="seat vip" type="button" aria-label="Seat A3 VIP available">A3</button>
+                      <button class="seat vip" type="button" aria-label="Seat A4 VIP available">A4</button>
+                      <button class="seat booked" type="button" aria-label="Seat A5 VIP booked" disabled>A5</button>
+                      <button class="seat vip" type="button" aria-label="Seat A6 VIP available">A6</button>
+                      <button class="seat vip" type="button" aria-label="Seat A7 VIP available">A7</button>
+                      <button class="seat locked" type="button" aria-label="Seat A8 VIP locked" disabled>A8</button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="seat-section-card" aria-labelledby="premium-title">
+                  <div class="seat-section-header">
+                    <h2 id="premium-title">Premium</h2>
+                    <span class="pill">&#8377;250 / seat</span>
+                  </div>
+                  <div class="seat-grid" role="grid" aria-label="Premium seat grid">
+                    <div class="seat-row" role="row">
+                      <span class="row-label">B</span>
+                      <button class="seat premium" type="button" aria-label="Seat B1 premium available">B1</button>
+                      <button class="seat premium" type="button" aria-label="Seat B2 premium available">B2</button>
+                      <button class="seat premium" type="button" aria-label="Seat B3 premium available">B3</button>
+                      <button class="seat premium" type="button" aria-label="Seat B4 premium available">B4</button>
+                      <button class="seat premium" type="button" aria-label="Seat B5 premium available">B5</button>
+                      <button class="seat booked" type="button" aria-label="Seat B6 premium booked" disabled>B6</button>
+                      <button class="seat premium" type="button" aria-label="Seat B7 premium available">B7</button>
+                      <button class="seat premium" type="button" aria-label="Seat B8 premium available">B8</button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="seat-section-card" aria-labelledby="regular-title">
+                  <div class="seat-section-header">
+                    <h2 id="regular-title">Regular</h2>
+                    <span class="pill">&#8377;180 / seat</span>
+                  </div>
+                  <div class="seat-grid" role="grid" aria-label="Regular seat grid">
+                    <div class="seat-row" role="row">
+                      <span class="row-label">C</span>
+                      <button class="seat available" type="button" aria-label="Seat C1 regular available">C1</button>
+                      <button class="seat available" type="button" aria-label="Seat C2 regular available">C2</button>
+                      <button class="seat available" type="button" aria-label="Seat C3 regular available">C3</button>
+                      <button class="seat available" type="button" aria-label="Seat C4 regular available">C4</button>
+                      <button class="seat booked" type="button" aria-label="Seat C5 regular booked" disabled>C5</button>
+                      <button class="seat available" type="button" aria-label="Seat C6 regular available">C6</button>
+                      <button class="seat available" type="button" aria-label="Seat C7 regular available">C7</button>
+                      <button class="seat available" type="button" aria-label="Seat C8 regular available">C8</button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <aside class="summary-card stack-md" aria-labelledby="seat-summary-title">
+              <span class="badge">Seat legend</span>
+              <h2 id="seat-summary-title">Booking overview</h2>
+              <div class="legend" aria-label="Seat legend">
+                <span class="legend-item"><span class="legend-swatch" style="background:#22c55e;"></span>Available</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#38bdf8;"></span>Premium</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#ef4444;"></span>VIP</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#94a3b8;"></span>Booked</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:#334155;"></span>Locked</span>
+              </div>
+              <div class="detail-list">
+                <div class="detail-item">
+                  <strong>Movie</strong>
+                  <span>Avatar Horizons</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Theatre</strong>
+                  <span>PVR Luxe</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Show time</strong>
+                  <span>7:40 PM</span>
+                </div>
+                <div class="detail-item">
+                  <strong>Selected</strong>
+                  <span>A3, A4</span>
+                </div>
+              </div>
+              <a class="button w-full" href="booking-summary.html">Continue booking</a>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p>&copy; 2026 CineSeat. Enterprise-ready movie booking UI.</p>
+          <p>Seat map is ready for dynamic availability data later.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

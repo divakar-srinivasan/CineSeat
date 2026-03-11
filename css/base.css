@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #e50914;
+  --primary-dark: #b20710;
+  --background-dark: #0b1020;
+  --background-accent: #141b31;
+  --surface-color: rgba(13, 20, 38, 0.92);
+  --surface-strong: #11182c;
+  --card-bg: rgba(23, 32, 56, 0.9);
+  --card-border: rgba(148, 163, 184, 0.16);
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dark: #0f172a;
+  --success-color: #22c55e;
+  --premium-color: #38bdf8;
+  --vip-color: #ef4444;
+  --booked-color: #64748b;
+  --locked-color: #334155;
+  --warning-color: #f59e0b;
+  --container-width: 1200px;
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --shadow-soft: 0 18px 50px rgba(15, 23, 42, 0.25);
+  --shadow-card: 0 14px 40px rgba(2, 6, 23, 0.35);
+  --transition-standard: 180ms ease;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-base);
+  color: var(--text-light);
+  background:
+    radial-gradient(circle at top, rgba(229, 9, 20, 0.18), transparent 24%),
+    linear-gradient(180deg, #08111f 0%, #0b1020 45%, #111827 100%);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  color: var(--text-light);
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: var(--radius-md);
+}
+
+input::placeholder {
+  color: var(--text-muted);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  display: block;
+}
+
+label {
+  display: inline-block;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(125, 211, 252, 0.9);
+  outline-offset: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
