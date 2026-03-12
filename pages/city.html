@@ -1,128 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineSeat | Select City</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/utilities.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <div class="container navbar">
-          <a class="brand" href="../index.html" aria-label="CineSeat home">
-            <span class="brand-mark">CS</span>
-            <span>CineSeat</span>
-          </a>
-          <nav class="nav-menu" aria-label="Primary navigation">
-            <a class="nav-link" href="../index.html">Home</a>
-            <a class="nav-link is-active" href="city.html">Cities</a>
-            <a class="nav-link" href="movies.html">Movies</a>
-            <a class="nav-link" href="booking-summary.html">Bookings</a>
-          </nav>
-          <div class="nav-actions">
-            <a class="button-secondary" href="payment.html">Login</a>
-          </div>
-        </div>
-      </header>
 
-      <main class="site-main">
-        <section class="section">
-          <div class="container stack-lg">
-            <div class="page-banner stack-md">
-              <span class="badge">Step 1 of 7</span>
-              <h1>Select your city</h1>
-              <p>
-                Choose the operating market to tailor theatres, show availability, taxes, and
-                offers. Static search UI is included for future API wiring.
-              </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineSeat | Select City</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="../index.html" aria-label="CineSeat home">
+          <span class="brand-mark">CS</span>
+          <span>CineSeat</span>
+        </a>
+        <nav class="nav-menu" aria-label="Primary navigation">
+          <a class="nav-link" href="movies.html">Movies</a>
+          <a class="nav-link" href="#">Live Events</a>
+          <a class="nav-link" href="#">Sports</a>
+          <a class="nav-link" href="#">My Bookings</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button-secondary" href="payment.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container stack-lg">
+          <div class="page-banner stack-md">
+            <span class="badge">Step 1 of 7</span>
+            <h1>Select your city</h1>
+            <p>
+              Choose the operating market to tailor theatres, show availability, taxes, and
+              offers. Static search UI is included for future API wiring.
+            </p>
+          </div>
+
+          <section class="card stack-md" aria-labelledby="city-search-title">
+            <div class="section-header mb-4">
+              <div>
+                <h2 id="city-search-title">Find a location</h2>
+                <p class="text-muted">Popular markets and metro hubs prioritized for quick booking.</p>
+              </div>
+            </div>
+            <form>
+              <label class="visually-hidden" for="city-search">Search for a city</label>
+              <input id="city-search" type="search" placeholder="Search by city, region, or theatre cluster"
+                aria-label="Search for your city">
+            </form>
+          </section>
+
+          <section aria-labelledby="popular-cities-title">
+            <div class="section-header">
+              <div>
+                <span class="badge">Popular cities</span>
+                <h2 id="popular-cities-title">Choose a city to continue</h2>
+              </div>
             </div>
 
-            <section class="card stack-md" aria-labelledby="city-search-title">
-              <div class="section-header mb-4">
-                <div>
-                  <h2 id="city-search-title">Find a location</h2>
-                  <p class="text-muted">Popular markets and metro hubs prioritized for quick booking.</p>
-                </div>
-              </div>
-              <form>
-                <label class="visually-hidden" for="city-search">Search for a city</label>
-                <input
-                  id="city-search"
-                  type="search"
-                  placeholder="Search by city, region, or theatre cluster"
-                  aria-label="Search for your city"
-                >
-              </form>
-            </section>
-
-            <section aria-labelledby="popular-cities-title">
-              <div class="section-header">
-                <div>
-                  <span class="badge">Popular cities</span>
-                  <h2 id="popular-cities-title">Choose a city to continue</h2>
-                </div>
-              </div>
-
-              <div class="grid-auto">
-                <article class="city-card hover-lift">
-                  <a href="movies.html">
-                    <span class="badge">Recommended</span>
-                    <strong>Chennai</strong>
-                    <span class="text-muted">42 theatres &middot; 168 shows today</span>
-                  </a>
-                </article>
-                <article class="city-card hover-lift">
-                  <a href="movies.html">
-                    <span class="badge">Trending</span>
-                    <strong>Bengaluru</strong>
-                    <span class="text-muted">58 theatres &middot; premium multiplex access</span>
-                  </a>
-                </article>
-                <article class="city-card hover-lift">
-                  <a href="movies.html">
-                    <span class="badge">Weekend peak</span>
-                    <strong>Mumbai</strong>
-                    <span class="text-muted">65 theatres &middot; fast-filling evening slots</span>
-                  </a>
-                </article>
-                <article class="city-card hover-lift">
-                  <a href="movies.html">
-                    <span class="badge">Value bookings</span>
-                    <strong>Hyderabad</strong>
-                    <span class="text-muted">39 theatres &middot; family offers available</span>
-                  </a>
-                </article>
-                <article class="city-card hover-lift">
-                  <a href="movies.html">
-                    <span class="badge">South circuit</span>
-                    <strong>Kochi</strong>
-                    <span class="text-muted">21 theatres &middot; multilingual screenings</span>
-                  </a>
-                </article>
-                <article class="city-card hover-lift">
-                  <a href="movies.html">
-                    <span class="badge">Regional hub</span>
-                    <strong>Madurai</strong>
-                    <span class="text-muted">14 theatres &middot; premium recliner access</span>
-                  </a>
-                </article>
-              </div>
-            </section>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer-inner">
-          <p>&copy; 2026 CineSeat. Enterprise-ready movie booking UI.</p>
-          <p>Reusable city cards prepared for component extraction.</p>
+            <div class="grid-auto">
+              <article class="city-card hover-lift">
+                <a href="movies.html">
+                  <span class="badge">Recommended</span>
+                  <strong>Chennai</strong>
+                  <span class="text-muted">42 theatres &middot; 168 shows today</span>
+                </a>
+              </article>
+              <article class="city-card hover-lift">
+                <a href="movies.html">
+                  <span class="badge">Trending</span>
+                  <strong>Bengaluru</strong>
+                  <span class="text-muted">58 theatres &middot; premium multiplex access</span>
+                </a>
+              </article>
+              <article class="city-card hover-lift">
+                <a href="movies.html">
+                  <span class="badge">Weekend peak</span>
+                  <strong>Mumbai</strong>
+                  <span class="text-muted">65 theatres &middot; fast-filling evening slots</span>
+                </a>
+              </article>
+              <article class="city-card hover-lift">
+                <a href="movies.html">
+                  <span class="badge">Value bookings</span>
+                  <strong>Hyderabad</strong>
+                  <span class="text-muted">39 theatres &middot; family offers available</span>
+                </a>
+              </article>
+              <article class="city-card hover-lift">
+                <a href="movies.html">
+                  <span class="badge">South circuit</span>
+                  <strong>Kochi</strong>
+                  <span class="text-muted">21 theatres &middot; multilingual screenings</span>
+                </a>
+              </article>
+              <article class="city-card hover-lift">
+                <a href="movies.html">
+                  <span class="badge">Regional hub</span>
+                  <strong>Madurai</strong>
+                  <span class="text-muted">14 theatres &middot; premium recliner access</span>
+                </a>
+              </article>
+            </div>
+          </section>
         </div>
-      </footer>
-    </div>
-  </body>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 CineSeat. movie booking Platform.</p>
+        <p>Designed by DIVAKAR S</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

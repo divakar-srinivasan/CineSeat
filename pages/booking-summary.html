@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineSeat | Booking Summary</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/utilities.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <div class="container navbar">
-          <a class="brand" href="../index.html" aria-label="CineSeat home">
-            <span class="brand-mark">CS</span>
-            <span>CineSeat</span>
-          </a>
-          <nav class="nav-menu" aria-label="Primary navigation">
-            <a class="nav-link" href="../index.html">Home</a>
-            <a class="nav-link" href="city.html">Cities</a>
-            <a class="nav-link" href="movies.html">Movies</a>
-            <a class="nav-link is-active" href="booking-summary.html">Bookings</a>
-          </nav>
-          <div class="nav-actions">
-            <a class="button-secondary" href="payment.html">Login</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineSeat | Booking Summary</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="../index.html" aria-label="CineSeat home">
+          <span class="brand-mark">CS</span>
+          <span>CineSeat</span>
+        </a>
+        <nav class="nav-menu" aria-label="Primary navigation">
+          <a class="nav-link" href="movies.html">Movies</a>
+          <a class="nav-link" href="#">Live Events</a>
+          <a class="nav-link" href="#">Sports</a>
+          <a class="nav-link is-active" href="#">My Bookings</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button-secondary" href="payment.html">Login</a>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main class="site-main">
-        <section class="section">
-          <div class="container grid-2">
-            <section class="ticket-card stack-md" aria-labelledby="booking-summary-title">
-              <span class="badge">Step 5 of 7</span>
-              <h1 id="booking-summary-title">Booking summary</h1>
-              <p class="text-muted">
-                Ticket styling uses a perforated visual treatment and clear totals for enterprise
-                review, later adaptable to API-driven checkout calculations.
-              </p>
-              <div class="ticket-divider"></div>
-              <div class="detail-list">
-                <div class="detail-item">
-                  <strong>Movie</strong>
-                  <span>Avatar Horizons</span>
-                </div>
-                <div class="detail-item">
-                  <strong>Theatre</strong>
-                  <span>PVR Luxe, Phoenix Marketcity</span>
-                </div>
-                <div class="detail-item">
-                  <strong>Show time</strong>
-                  <span>Thursday &middot; 7:40 PM</span>
-                </div>
-                <div class="detail-item">
-                  <strong>Seats</strong>
-                  <span>A3, A4</span>
-                </div>
-                <div class="detail-item">
-                  <strong>Seat type</strong>
-                  <span>VIP</span>
-                </div>
-                <div class="detail-item">
-                  <strong>Language / Format</strong>
-                  <span>English &middot; IMAX 3D</span>
-                </div>
+    <main class="site-main">
+      <section class="section">
+        <div class="container grid-2">
+          <section class="ticket-card stack-md" aria-labelledby="booking-summary-title">
+            <span class="badge">Step 5 of 7</span>
+            <h1 id="booking-summary-title">Booking summary</h1>
+            <p class="text-muted">
+              Check your movie, theatre, showtime, and seat details in one place 🎬.
+              Confirm everything and proceed to complete your ticket booking 💳🍿.
+            </p>
+            <div class="ticket-divider"></div>
+            <div class="detail-list">
+              <div class="detail-item">
+                <strong>Movie</strong>
+                <span>Avatar Horizons</span>
               </div>
-            </section>
+              <div class="detail-item">
+                <strong>Theatre</strong>
+                <span>PVR Luxe, Phoenix Marketcity</span>
+              </div>
+              <div class="detail-item">
+                <strong>Show time</strong>
+                <span>Thursday &middot; 7:40 PM</span>
+              </div>
+              <div class="detail-item">
+                <strong>Seats</strong>
+                <span>A3, A4</span>
+              </div>
+              <div class="detail-item">
+                <strong>Seat type</strong>
+                <span>VIP</span>
+              </div>
+              <div class="detail-item">
+                <strong>Language / Format</strong>
+                <span>English &middot; IMAX 3D</span>
+              </div>
+            </div>
+          </section>
 
-            <aside class="summary-card stack-md" aria-labelledby="pricing-title">
-              <span class="badge">Fare breakdown</span>
-              <h2 id="pricing-title">Price details</h2>
-              <div class="detail-list">
-                <div class="detail-item">
-                  <strong>VIP seats x 2</strong>
-                  <span>&#8377;700</span>
-                </div>
-                <div class="detail-item">
-                  <strong>Convenience fee</strong>
-                  <span>&#8377;60</span>
-                </div>
-                <div class="detail-item">
-                  <strong>GST</strong>
-                  <span>&#8377;28</span>
-                </div>
+          <aside class="summary-card stack-md" aria-labelledby="pricing-title">
+            <span class="badge">Fare breakdown</span>
+            <h2 id="pricing-title">Price details</h2>
+            <div class="detail-list">
+              <div class="detail-item">
+                <strong>VIP seats x 2</strong>
+                <span>&#8377;700</span>
               </div>
-              <div class="checkout-total">
-                <div>
-                  <p class="text-muted">Total amount</p>
-                  <strong>&#8377;788</strong>
-                </div>
-                <a class="button" href="payment.html">Proceed to payment</a>
+              <div class="detail-item">
+                <strong>Convenience fee</strong>
+                <span>&#8377;60</span>
               </div>
-            </aside>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer-inner">
-          <p>&copy; 2026 CineSeat. Enterprise-ready movie booking UI.</p>
-          <p>Summary card uses reusable dashed ticket styling.</p>
+              <div class="detail-item">
+                <strong>GST</strong>
+                <span>&#8377;28</span>
+              </div>
+            </div>
+            <div class="checkout-total">
+              <div>
+                <p class="text-muted">Total amount</p>
+                <strong>&#8377;788</strong>
+              </div>
+              <a class="button" href="payment.html">Proceed to payment</a>
+            </div>
+          </aside>
         </div>
-      </footer>
-    </div>
-  </body>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 CineSeat. movie booking Platform.</p>
+        <p>Designed by DIVAKAR S</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

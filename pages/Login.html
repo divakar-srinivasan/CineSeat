@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CineSeat</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="container navbar">
+                <a class="brand" href="../index.html" aria-label="CineSeat home">
+                    <span class="brand-mark">CS</span>
+                    <span>CineSeat</span>
+                </a>
+                <nav class="nav-menu" aria-label="Primary navigation">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                    <a class="nav-link" href="#">Live Events</a>
+                    <a class="nav-link" href="#">Sports</a>
+                    <a class="nav-link" href="#">My Bookings</a>
+                </nav>
+            </div>
+        </header>
+        <main class="site-main">
+            <section class="section">
+                <div class="container" style="max-width: 420px;">
+                    <div class="card"
+                        style="background: var(--card-bg); box-shadow: var(--shadow-card); border-radius: var(--radius-md); padding: var(--space-6);">
+                        <h2 class="text-center mb-6">Login to CineSeat</h2>
+                        <form class="stack-md">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="w-full" placeholder="Enter your email"
+                                required
+                                style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--card-border); background: var(--surface-color); color: var(--text-light);">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="w-full"
+                                placeholder="Enter your password" required
+                                style="padding: var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--card-border); background: var(--surface-color); color: var(--text-light);">
+                            <button type="submit" class="button w-full mt-6"
+                                style="background: var(--primary-color); color: var(--text-light); border-radius: var(--radius-sm);">Login</button>
+                            <p class="text-center mt-4 text-muted">Don't have an account? <a href="#"
+                                    style="color: var(--primary-color);">Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container text-center text-muted" style="padding: var(--space-4);">
+                &copy; 2026 CineSeat. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
