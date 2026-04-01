@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | CineSeat</title>
+    <title>Signup | CineSeat</title>
+
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/utilities.css">
-    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
+
     <div class="site-shell">
+
         <!DOCTYPE html>
 
         <html lang="en">
@@ -21,7 +21,7 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Login | CineSeat</title>
+            <title>Signup | CineSeat</title>
 
             <link rel="stylesheet" href="../css/base.css">
             <link rel="stylesheet" href="../css/layout.css">
@@ -33,6 +33,7 @@
         <body>
 
             <div class="site-shell">
+
                 <!-- HEADER -->
                 <header class="site-header">
                     <div class="container navbar">
@@ -49,29 +50,39 @@
                         <div class="container" style="max-width: 420px;">
 
                             <div class="card">
-                                <h2 class="text-center mb-6">Login to CineSeat</h2>
+                                <h2 class="text-center mb-6">Create your account</h2>
 
-                                <form id="login-form" class="stack-md">
+                                <form id="signup-form" class="stack-md">
+
+                                    <!-- NAME -->
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" class="w-full"
+                                        placeholder="Enter your name" required>
 
                                     <!-- EMAIL -->
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" class="w-full form-input"
+                                    <input type="email" id="email" name="email" class="w-full"
                                         placeholder="Enter your email" required>
 
                                     <!-- PASSWORD -->
                                     <label for="password">Password</label>
-                                    <input type="password" id="password" name="password" class="w-full form-input"
-                                        placeholder="Enter your password" required>
+                                    <input type="password" id="password" name="password" class="w-full"
+                                        placeholder="Create a password" required>
+
+                                    <!-- CONFIRM PASSWORD -->
+                                    <label for="confirm-password">Confirm Password</label>
+                                    <input type="password" id="confirm-password" name="confirm-password" class="w-full"
+                                        placeholder="Re-enter your password" required>
 
                                     <!-- BUTTON -->
                                     <button type="submit" class="button w-full mt-6">
-                                        Login
+                                        Sign up
                                     </button>
 
-                                    <!-- SIGNUP LINK -->
+                                    <!-- LOGIN LINK -->
                                     <p class="text-center mt-4 text-muted">
-                                        Don't have an account?
-                                        <a href="signup.html" style="color: var(--primary-color);">Sign up</a>
+                                        Already have an account?
+                                        <a href="login.html" style="color: var(--primary-color);">Login</a>
                                     </p>
 
                                 </form>
@@ -85,9 +96,11 @@
                 <!-- FOOTER -->
                 <div id="footer"></div>
 
+
             </div>
             <script type="module" src="../js/utils/loadComponents.js"></script>
-            <script type="module" src="../js/auth/login.js"></script>
+
+            <script type="module" src="../js/auth/signup.js"></script>
 
         </body>
 

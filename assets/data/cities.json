@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Chennai",
+    "tag": "Recommended",
+    "description": "42 theatres · 168 shows today"
+  },
+  {
+    "name": "Bengaluru",
+    "tag": "Trending",
+    "description": "58 theatres · premium multiplex access"
+  },
+  {
+    "name": "Mumbai",
+    "tag": "Weekend peak",
+    "description": "65 theatres · fast-filling evening slots"
+  },
+  {
+    "name": "Hyderabad",
+    "tag": "Value bookings",
+    "description": "39 theatres · family offers available"
+  },
+  {
+    "name": "Kochi",
+    "tag": "South circuit",
+    "description": "21 theatres · multilingual screenings"
+  },
+  {
+    "name": "Madurai",
+    "tag": "Regional hub",
+    "description": "14 theatres · premium recliner access"
+  }
+]

@@ -14,23 +14,7 @@
 
 <body>
   <div class="site-shell">
-    <header class="site-header">
-      <div class="container navbar">
-        <a class="brand" href="index.html" aria-label="CineSeat home">
-          <span class="brand-mark">CS</span>
-          <span>CineSeat</span>
-        </a>
-        <nav class="nav-menu" aria-label="Primary navigation">
-          <a class="nav-link" href="pages/movies.html">Movies</a>
-          <a class="nav-link" href="#">Live Events</a>
-          <a class="nav-link" href="#">Sports</a>
-          <a class="nav-link" href="#">My Bookings</a>
-        </nav>
-        <div class="nav-actions">
-          <a class="button-secondary" href="pages/Login.html">Login</a>
-        </div>
-      </div>
-    </header>
+    <div id="navbar"></div>
 
     <main class="site-main">
       <section class="section">
@@ -92,69 +76,21 @@
             <a class="button-secondary" href="pages/movies.html">View all movies</a>
           </div>
 
-          <div class="grid-3">
-            <article class="card movie-card hover-lift">
-              <img src="assets/images/movie1.png" alt="Avatar Horizons movie poster">
-              <div class="movie-card-content">
-                <div class="split">
-                  <h3>Avatar Horizons</h3>
-                  <span class="rating-badge" aria-label="Rated 8.8 out of 10">8.8</span>
-                </div>
-                <div class="card-meta">
-                  <span class="badge">Sci-Fi</span>
-                  <span class="pill">English</span>
-                  <span class="pill">3D</span>
-                </div>
-                <p class="text-muted">Visual spectacle with premium large-format show availability.</p>
-                <a class="button" href="pages/theatres.html">Book Now</a>
-              </div>
-            </article>
 
-            <article class="card movie-card hover-lift">
-              <img src="assets/images/movie2.jpg" alt="Interstellar Reissue movie poster">
-              <div class="movie-card-content">
-                <div class="split">
-                  <h3>Interstellar Reissue</h3>
-                  <span class="rating-badge" aria-label="Rated 9.1 out of 10">9.1</span>
-                </div>
-                <div class="card-meta">
-                  <span class="badge">Drama</span>
-                  <span class="pill">English</span>
-                  <span class="pill">IMAX</span>
-                </div>
-                <p class="text-muted">Classic space epic returning with immersive audio and recliners.</p>
-                <a class="button" href="pages/theatres.html">Book Now</a>
-              </div>
-            </article>
 
-            <article class="card movie-card hover-lift">
-              <img src="assets/images/movie3.jpg" alt="Spider-Verse Reloaded movie poster">
-              <div class="movie-card-content">
-                <div class="split">
-                  <h3>Spider-Verse Reloaded</h3>
-                  <span class="rating-badge" aria-label="Rated 8.4 out of 10">8.4</span>
-                </div>
-                <div class="card-meta">
-                  <span class="badge">Action</span>
-                  <span class="pill">English</span>
-                  <span class="pill">4DX</span>
-                </div>
-                <p class="text-muted">Fast-paced superhero screening with family-friendly afternoon slots.</p>
-                <a class="button" href="pages/theatres.html">Book Now</a>
-              </div>
-            </article>
+
+
+
+            <div class="grid-auto" id="movies-container"></div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p>&copy; 2026 CineSeat. movie booking Platform.</p>
-        <p>Designed by DIVAKAR S</p>
-      </div>
-    </footer>
+    <div id="footer"></div>
   </div>
+  <script type="module" src="/js/utils/loadComponents.js"></script>
+  <script type="module" src="/js/indexScripts/homeMovies.js"></script>
 </body>
 
 </html>

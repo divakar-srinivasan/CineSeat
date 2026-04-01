@@ -1,0 +1,23 @@
+[
+  {
+    "name": "PVR Luxe, Phoenix Marketcity",
+    "location": "Velachery, Chennai · 6.2 km away",
+    "tag": "4K Dolby Atmos",
+    "features": "Premium recliners, food ordering lane, wheelchair access.",
+    "showtimes": ["10:15 AM", "1:45 PM", "5:20 PM", "8:55 PM"]
+  },
+  {
+    "name": "INOX Megaplex, Marina Mall",
+    "location": "OMR, Chennai · 12.4 km away",
+    "tag": "IMAX Laser",
+    "features": "Large format screen, lounge waiting area, family combo offers.",
+    "showtimes": ["9:30 AM", "12:55 PM", "4:10 PM", "7:40 PM"]
+  },
+  {
+    "name": "AGS Cinemas, Villivakkam",
+    "location": "Skywalk Mall, Chennai · 9.8 km away",
+    "tag": "Recliner Lounge",
+    "features": "Balanced pricing with premium and standard halls.",
+    "showtimes": ["11:00 AM", "2:20 PM", "5:50 PM", "9:15 PM"]
+  }
+]
